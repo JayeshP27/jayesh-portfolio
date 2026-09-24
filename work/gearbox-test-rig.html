@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Gearbox Test Rig &amp; Shaft Redesign | Jayesh Phadkar</title>
+  <meta name="description" content="Case study: an NX CAD dynamic gearbox test rig for a paddy harvester powertrain, improving testing efficiency by 25% and cutting warranty claims by 14%.">
+  <meta property="og:title" content="Dynamic Gearbox Test Rig | Jayesh Phadkar">
+  <meta property="og:image" content="../assets/img/gearbox-rig-iso.jpg">
+  <meta name="theme-color" content="#f5f4ef">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Primary">
+    <a class="brand" href="../index.html" aria-label="Jayesh Phadkar, home">
+      <span class="brand-mark">JP</span>
+      <span><span class="brand-name">Jayesh Phadkar</span><span class="brand-role">Product Design &amp; Development</span></span>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../index.html#snapshots">Snapshots</a></li>
+        <li><a class="nav-cta" href="../index.html#contact">Contact</a></li>
+      </ul>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
+      <button class="icon-btn menu-btn" data-menu aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+  <section class="cs-hero">
+    <div class="crumbs"><a href="../index.html#work">← All work</a><span>/</span><span>Case study 02</span></div>
+    <span class="eyebrow"><span class="num">02</span> Powertrain · Test &amp; validation</span>
+    <h1>Dynamic gearbox test rig &amp; shaft redesign</h1>
+    <p class="lede">An NX CAD test fixture that holds, aligns and loads a harvester gearbox under simulated real-time conditions. It finds failures on the test bench before they reach the field. I also redesigned a reduction shaft and marked up assembly drawings for the shop floor.</p>
+
+    <div class="cs-meta">
+      <div><b>Role</b><span>Manufacturing &amp; Operations Engineer (design owner)</span></div>
+      <div><b>Company</b><span>Mahindra Farm Machinery</span></div>
+      <div><b>Program</b><span>Paddy Harvester 2100 · 88 hp</span></div>
+      <div><b>Toolkit</b><span>Siemens NX · GD&amp;T · Fits &amp; torque specs</span></div>
+    </div>
+  </section>
+
+  <figure class="sheet cs-cover" style="margin-left:0;margin-right:0">
+    <img src="../assets/img/gearbox-rig-iso.jpg" alt="NX CAD model of the gearbox test rig: gearbox on orange pedestals, V-block shaft supports, T-slot sliding carriage and yellow welded frame" style="object-position:center 55%">
+  </figure>
+
+  <section class="cs-block">
+    <header><span class="eyebrow"><span class="num">A</span> Context</span><h2>The challenge</h2></header>
+    <div class="cs-content">
+      <p>Gearbox validation for the Paddy Harvester powertrain was slow, and too many defects only showed up after units reached the field, which drove warranty claims. The team needed a rig that could mount the gearbox repeatably, align the input and output shafts to a drive, and run it under loads close to real operation.</p>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <header><span class="eyebrow"><span class="num">B</span> Design</span><h2>Rig architecture</h2></header>
+    <div class="cs-content">
+      <ol class="steps">
+        <li><div><h4>Rigid welded base frame</h4><p>Box-section weldment carrying separate machined top plates for the gearbox station and the drive and slide station.</p></div></li>
+        <li><div><h4>Gearbox mounting pedestals</h4><p>Pedestals that pick up the gearbox's own mounting pads, with locating and clamp blocks so every unit sits in the same place.</p></div></li>
+        <li><div><h4>Adjustable V-block shaft supports</h4><p>V-blocks on screw jacks support and align the input and output shafts at the correct centre height for coupling.</p></div></li>
+        <li><div><h4>T-slot bed with sliding carriage</h4><p>A rack-and-pinion driven carriage on a T-slot bed lets the drive or load side slide in axially for fast engagement and alignment.</p></div></li>
+        <li><div><h4>Full assembly in NX</h4><p>Modeled the complete rig with the gearbox mounted to confirm clearances, access and reach before fabrication.</p></div></li>
+      </ol>
+      <div class="gallery g2" style="margin-top:24px">
+        <figure class="tall"><img src="../assets/img/gearbox-rig-front.jpg" alt="Front view of the gearbox on the test rig in NX CAD" loading="lazy" style="object-position:center 60%"><figcaption><b>Front elevation.</b> Gearbox on pedestals with clamp blocks and jack-mounted supports.</figcaption></figure>
+        <figure class="tall"><img src="../assets/img/snap-test-bench-drawing.jpg" alt="General arrangement drawing of the gearbox test bench" loading="lazy" style="object-fit:contain;background:#fff"><figcaption><b>General arrangement.</b> Test bench layout and fixture details released for fabrication.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <header><span class="eyebrow"><span class="num">C</span> Detail</span><h2>Reduction shaft &amp; drawing markup</h2></header>
+    <div class="cs-content">
+      <p>Alongside the rig, I revised a reduction shaft and detailed it in NX. I also hand-marked bearing fits, tightening torques and gear backlash onto the differential assembly section so the shop floor had one clear reference.</p>
+      <div class="table-scroll">
+        <table class="spec">
+          <tr><th>Part</th><td>Reduction shaft · Qty 2</td></tr>
+          <tr><th>Overall length</th><td>210 mm (110 / 50 / 50 steps)</td></tr>
+          <tr><th>Diameters</th><td>Ø30 / Ø25 stepped</td></tr>
+          <tr><th>Keyways</th><td>8 × 4 (Section A-A) · 5 × 2.5 (Section B-B)</td></tr>
+          <tr><th>End features</th><td>M10 × 1.5, 20 deep · M8 × 1.25, 16 deep</td></tr>
+          <tr><th>Assembly markup</th><td>Bearing fits, tightening torques with thread-locker, 0.15–0.20 mm backlash</td></tr>
+        </table>
+      </div>
+      <div class="gallery g2 contain">
+        <figure><img src="../assets/img/shaft-drawing.jpg" alt="NX drawing of the reduction shaft with dimensions, sections and isometric view" loading="lazy"><figcaption><b>Shaft drawing.</b> Stepped shaft with keyway sections and tapped ends.</figcaption></figure>
+        <figure><img src="../assets/img/diff-section-markup.jpg" alt="Differential assembly section drawing with handwritten annotations" loading="lazy"><figcaption><b>Section A-A markup.</b> Differential and half-shaft assembly annotated for the shop floor.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <header><span class="eyebrow"><span class="num">D</span> Outcome</span><h2>Results</h2></header>
+    <div class="cs-content">
+      <div class="metrics">
+        <div class="metric"><div class="metric-num">+25%</div><p>Gearbox testing efficiency</p></div>
+        <div class="metric"><div class="metric-num">−14%</div><p>Warranty claims, from catching failures earlier</p></div>
+        <div class="metric"><div class="metric-num">88 hp</div><p>Paddy Harvester 2100 powertrain validated on the rig</p></div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="cs-next" aria-label="More case studies">
+    <a href="smart-speaker.html"><span class="mono">← Previous</span><h3>Smart speaker teardown</h3></a>
+    <a href="transmission-fixtures.html"><span class="mono">Next case study →</span><h3>Transmission case fixtures</h3></a>
+  </nav>
+</main>
+
+<footer class="site-footer" style="margin-top:64px">
+  <div class="wrap"><span>© <span data-year>2026</span> Jayesh Phadkar</span><a href="../index.html#contact">Get in touch →</a></div>
+</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

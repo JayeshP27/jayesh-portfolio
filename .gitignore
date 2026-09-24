@@ -1,0 +1,4 @@
+# Local working files (PDF extraction, source images) — not published
+_work/
+.DS_Store
+Thumbs.db

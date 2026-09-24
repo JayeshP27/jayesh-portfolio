@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electric Two-Wheeler Prototype (ETWDC 2020) | Jayesh Phadkar</title>
+  <meta name="description" content="Case study: a fully functional electric two-wheeler prototype with a 1 kW BLDC motor, 48 V 24 Ah Li-ion pack, AISI 4130 chassis and full-vehicle CAE for ETWDC 2020.">
+  <meta property="og:title" content="Electric Two-Wheeler Prototype | Jayesh Phadkar">
+  <meta property="og:image" content="../assets/img/ev-cad-systems.jpg">
+  <meta name="theme-color" content="#f5f4ef">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Primary">
+    <a class="brand" href="../index.html" aria-label="Jayesh Phadkar, home">
+      <span class="brand-mark">JP</span>
+      <span><span class="brand-name">Jayesh Phadkar</span><span class="brand-role">Product Design &amp; Development</span></span>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../index.html#snapshots">Snapshots</a></li>
+        <li><a class="nav-cta" href="../index.html#contact">Contact</a></li>
+      </ul>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
+      <button class="icon-btn menu-btn" data-menu aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+  <section class="cs-hero">
+    <div class="crumbs"><a href="../index.html#work">← All work</a><span>/</span><span>Case study 05</span></div>
+    <span class="eyebrow"><span class="num">05</span> Vehicle design · CAE</span>
+    <h1>Electric two-wheeler prototype</h1>
+    <p class="lede">A fully functional EV prototype built for the Electric Two-Wheeler Design Competition (ETWDC 2020), covering chassis, drivetrain, battery pack, electronics and full-vehicle CAE.</p>
+
+    <div class="cs-meta">
+      <div><b>Role</b><span>Design &amp; CAE engineer</span></div>
+      <div><b>Context</b><span>ETWDC 2020 · university team</span></div>
+      <div><b>Timeline</b><span>2020</span></div>
+      <div><b>Toolkit</b><span>CAD · ANSYS (impact &amp; modal) · Arduino</span></div>
+    </div>
+  </section>
+
+  <div class="gallery g2 contain" style="margin-bottom:clamp(48px,7vw,88px)">
+    <figure class="tall"><img src="../assets/img/ev-cad-systems.jpg" alt="CAD renders of the EV suspension and transmission systems" style="aspect-ratio:auto"><figcaption><b>Vehicle CAD.</b> Suspension and transmission system layouts.</figcaption></figure>
+    <figure class="tall"><img src="../assets/img/ev-impact-fea.jpg" alt="ANSYS rear impact analysis of the main frame showing stress, deformation and factor of safety" style="aspect-ratio:auto"><figcaption><b>Rear impact CAE.</b> Main-frame stress, deformation and factor of safety.</figcaption></figure>
+  </div>
+
+  <section class="cs-block">
+    <header><span class="eyebrow"><span class="num">A</span> Specs</span><h2>Vehicle at a glance</h2></header>
+    <div class="cs-content">
+      <div class="table-scroll">
+        <table class="spec">
+          <tr><th>Motor</th><td>1 kW BLDC motor</td></tr>
+          <tr><th>Battery</th><td>Custom Li-ion pack, 48 V / 24 Ah</td></tr>
+          <tr><th>Range</th><td>30 km per charge</td></tr>
+          <tr><th>Torque / acceleration</th><td>126 N·m final output · up to 1.2 m/s²</td></tr>
+          <tr><th>Chassis</th><td>AISI 4130 chromoly tubing, frame and swingarm</td></tr>
+          <tr><th>Crash load cases</th><td>2G front / rear, 1G side</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <header><span class="eyebrow"><span class="num">B</span> Engineering</span><h2>What I worked on</h2></header>
+    <div class="cs-content">
+      <ol class="steps">
+        <li><div><h4>Chassis &amp; swingarm optimization</h4><p>Used AISI 4130 tubing to cut weight while keeping crash safety, and validated it with modal and impact simulations (2G front and rear, 1G side).</p></div></li>
+        <li><div><h4>Full-vehicle CAE</h4><p>Analysed frame integrity, battery housing and drivetrain loads to confirm the final 126 N·m torque output and 1.2 m/s² acceleration target.</p></div></li>
+        <li><div><h4>Regenerative braking &amp; ergonomics</h4><p>Engineered the regenerative braking circuits and ergonomic handlebar interfaces.</p></div></li>
+        <li><div><h4>Auxiliary systems</h4><p>Added ultrasonic obstacle detection and variable-intensity automatic headlamps, prototyped on Arduino.</p></div></li>
+      </ol>
+      <div class="gallery g2 contain" style="margin-top:24px">
+        <figure class="wide"><img src="../assets/img/snap-arduino-circuit.jpg" alt="Arduino Uno breadboard circuit with ultrasonic sensor, buzzer and LDR" loading="lazy"><figcaption><b>Obstacle-detection circuit.</b> Ultrasonic sensor, buzzer and light sensor for the auto headlamp.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <header><span class="eyebrow"><span class="num">C</span> Outcome</span><h2>Results</h2></header>
+    <div class="cs-content">
+      <div class="metrics">
+        <div class="metric"><div class="metric-num">30 km</div><p>Range per charge from a 48 V / 24 Ah pack</p></div>
+        <div class="metric"><div class="metric-num">126 N·m</div><p>Final torque output, 1 kW BLDC</p></div>
+        <div class="metric"><div class="metric-num">2G</div><p>Front and rear impact load cases validated in CAE (1G side)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="cs-next" aria-label="More case studies">
+    <a href="cladding-anchor.html"><span class="mono">← Previous</span><h3>Stone cladding anchor</h3></a>
+    <a href="../index.html#snapshots"><span class="mono">Keep exploring →</span><h3>Some snapshots</h3></a>
+  </nav>
+</main>
+
+<footer class="site-footer" style="margin-top:64px">
+  <div class="wrap"><span>© <span data-year>2026</span> Jayesh Phadkar</span><a href="../index.html#contact">Get in touch →</a></div>
+</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

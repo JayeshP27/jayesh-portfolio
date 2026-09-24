@@ -207,9 +207,9 @@ ul { padding-left: 1.1em; }
   background-size: 24px 24px;
   border-bottom: 1px solid var(--rule);
 }
-.hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
 .hero h1 {
-  font-size: clamp(40px, 6.4vw, 76px);
+  font-size: clamp(38px, 5vw, 62px);
   font-weight: 600;
   letter-spacing: -0.035em;
   line-height: 1.02;
@@ -422,35 +422,36 @@ ul { padding-left: 1.1em; }
 .snap[hidden] { display: none; }
 
 /* ---------- Contact / footer ---------- */
-.contact { padding: clamp(72px, 10vw, 128px) 0; background: var(--ink); color: var(--paper); }
-.contact .eyebrow { color: color-mix(in srgb, var(--paper) 60%, transparent); }
-.contact .eyebrow::after { background: color-mix(in srgb, var(--paper) 35%, transparent); }
-.contact h2 { color: var(--paper); font-size: clamp(36px, 6vw, 72px); letter-spacing: -.035em; margin: 18px 0 20px; max-width: 16ch; }
-.contact p { color: color-mix(in srgb, var(--paper) 72%, transparent); max-width: 52ch; font-size: 18px; }
-.contact-links { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 44px; border-top: 1px solid color-mix(in srgb, var(--paper) 22%, transparent); }
+/* Contact + footer are always a dark band with light text, in BOTH themes,
+   so they use fixed colors instead of the theme tokens. */
+.contact, .site-footer { --cbg: #14171c; --cfg: #f5f4ef; --caccent: #7d93ff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .contact, :root:not([data-theme="light"]) .site-footer { --cbg: #07080a; } }
+:root[data-theme="dark"] .contact, :root[data-theme="dark"] .site-footer { --cbg: #07080a; }
+
+.contact { padding: clamp(72px, 10vw, 128px) 0; background: var(--cbg); color: var(--cfg); }
+.contact .eyebrow { color: rgba(245, 244, 239, .62); }
+.contact .eyebrow::after { background: rgba(245, 244, 239, .35); }
+.contact h2 { color: var(--cfg); font-size: clamp(36px, 6vw, 72px); letter-spacing: -.035em; margin: 18px 0 20px; max-width: 16ch; }
+.contact p { color: rgba(245, 244, 239, .78); max-width: 52ch; font-size: 18px; }
+.contact-links { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 44px; border-top: 1px solid rgba(245, 244, 239, .22); }
 .contact-links a {
   text-decoration: none; padding: 22px 20px 22px 0; display: flex; flex-direction: column; gap: 6px;
-  border-right: 1px solid color-mix(in srgb, var(--paper) 14%, transparent); margin-right: 20px;
+  border-right: 1px solid rgba(245, 244, 239, .14); margin-right: 20px;
 }
 .contact-links a:last-child { border-right: 0; }
-.contact-links .mono { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: color-mix(in srgb, var(--paper) 55%, transparent); }
-.contact-links span:last-child { font-size: clamp(16px, 1.6vw, 19px); color: var(--paper); word-break: break-word; }
-.contact-links a:hover span:last-child { text-decoration: underline; text-underline-offset: 4px; }
+.contact-links .mono { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: rgba(245, 244, 239, .6); }
+.contact-links span:last-child { font-size: clamp(16px, 1.6vw, 19px); color: var(--cfg); word-break: break-word; }
+.contact-links a:hover span:last-child { color: var(--caccent); text-decoration: underline; text-underline-offset: 4px; }
 @media (max-width: 760px) {
   .contact-links { grid-template-columns: 1fr; }
-  .contact-links a { border-right: 0; margin-right: 0; border-bottom: 1px solid color-mix(in srgb, var(--paper) 14%, transparent); }
+  .contact-links a { border-right: 0; margin-right: 0; border-bottom: 1px solid rgba(245, 244, 239, .14); }
 }
-.contact .btn-primary { background: var(--paper); color: var(--ink); border-color: var(--paper); }
-.contact .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
-.contact .btn-ghost { color: var(--paper); border-color: color-mix(in srgb, var(--paper) 40%, transparent); }
-.contact .btn-ghost:hover { background: var(--paper); color: var(--ink); }
-:root[data-theme="dark"] .contact, :root:not([data-theme="light"]) .contact { }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .contact { background: #07080a; } }
-:root[data-theme="dark"] .contact { background: #07080a; }
+.contact .btn-primary { background: var(--cfg); color: #14171c; border-color: var(--cfg); }
+.contact .btn-primary:hover { background: #2743d6; border-color: #2743d6; color: #fff; }
+.contact .btn-ghost { color: var(--cfg); border-color: rgba(245, 244, 239, .45); }
+.contact .btn-ghost:hover { background: var(--cfg); color: #14171c; }
 
-.site-footer { background: var(--ink); color: color-mix(in srgb, var(--paper) 55%, transparent); font: 12.5px/1.5 var(--f-mono); border-top: 1px solid color-mix(in srgb, var(--paper) 14%, transparent); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .site-footer { background: #07080a; } }
-:root[data-theme="dark"] .site-footer { background: #07080a; }
+.site-footer { background: var(--cbg); color: rgba(245, 244, 239, .62); font: 12.5px/1.5 var(--f-mono); border-top: 1px solid rgba(245, 244, 239, .14); }
 .site-footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding-top: 20px; padding-bottom: 20px; }
 .site-footer a { color: inherit; }
 
